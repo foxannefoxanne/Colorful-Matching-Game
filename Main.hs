@@ -296,15 +296,3 @@ drawTrapezoid size x y = do
 	closePath()
 	fillStyle "#01DFD7"
 	fill()
-
-
---blank shape
-bigLine :: (Double, Double) -> (Double, Double) -> Canvas ()
-bigLine (x,y) (x',y') = do
-	beginPath()
-	moveTo(x,y)
-	lineTo(x',y')
-	lineWidth 20 
-	strokeStyle "red"
-	lineCap "round" 
-	stroke() 
